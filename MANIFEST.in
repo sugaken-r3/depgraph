@@ -1,0 +1,7 @@
+include MANIFEST.in
+include README
+include COPYING
+include depgraph.py
+include setup.py
+include depgraph.spec.in
+recursive-include depgraph *.py
