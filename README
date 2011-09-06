@@ -1,4 +1,5 @@
-depgraph: yet another rpm dependency tool
+depgraph: yet another rpm dependency tool. For detailed info on
+what it does, please read depgraph.py.
 
 Copyright (C) 2011 Ken Sugawara
 
