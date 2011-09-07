@@ -3,7 +3,7 @@ import rpm
 import sys
 from optparse import OptionParser
 import operator
-from depgraph.mylist import flatten,uniq
+from dgsub.mylist import flatten,uniq
 
 Feat = {} # Feat[feature] => [ providers ]
 File = {} # File[filename] => [ providers ]
