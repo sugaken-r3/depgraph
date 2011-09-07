@@ -108,7 +108,7 @@ setup(name=PACKAGE,
     license="GPLv3+",
     url="https://github.com/sugaken-r3/depgraph",
     packages=[
-        "depgraph",
+        "dgsub",
     ],
     scripts=[
         "depgraph.py",

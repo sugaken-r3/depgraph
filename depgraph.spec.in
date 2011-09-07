@@ -6,7 +6,7 @@
 
 Name:           depgraph
 Version:        @VERSION@
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        RPM dependency resolver and visulalizer
 Group:          Development/Tools
 License:        GPLv3+
