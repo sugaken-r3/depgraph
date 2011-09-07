@@ -15,7 +15,7 @@ PACKAGE = "depgraph"
 
 ## For daily snapshots:
 #VERSION = "0.0.1" + datetime.datetime.now().strftime("%Y%m%d")
-VERSION = "0.0.1"
+VERSION = "0.1.0"
 
 DESCRIPTION = "RPM dependency resolver"
 
