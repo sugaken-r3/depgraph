@@ -15,13 +15,13 @@ Fmt = ".png"
 def lookup(feature):
     return Feat[feature] if (feature in Feat) else File[feature] if (feature in File) else []
 
-def builddep():
-    if Options.altdbpath:
-            rpm.addMacro('_dbpath', Options.altdbpath)
+def builddep(altdbpath):
+    if altdbpath:
+            rpm.addMacro('_dbpath', altdbpath)
     ts = rpm.TransactionSet()
     mi = ts.dbMatch()
 
-    if Options.altdbpath:
+    if altdbpath:
         rpm.delMacro('_dbpath')
 
     for h in mi:
@@ -196,7 +196,7 @@ if __name__ == '__main__':
                       help="generate text output in graphviz dot format")
     (Options, args) = parser.parse_args()
 
-    DepGraph = builddep()
+    DepGraph = builddep(Options.altdbpath)
     if Options.dumpall:
         dumpall(DepGraph)
     elif Options.showdeps:
